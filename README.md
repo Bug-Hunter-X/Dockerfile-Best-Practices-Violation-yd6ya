@@ -1,0 +1,1 @@
+This repository demonstrates a common mistake in Dockerfiles: using `ubuntu:latest` and not cleaning up after `apt-get`.  The original Dockerfile (`Dockerfile`) shows the problematic code. The fixed version (`Dockerfile_fixed`) demonstrates best practices, using a specific image tag and cleaning up with `apt-get clean` and `rm -rf /var/lib/apt/lists/*`.
